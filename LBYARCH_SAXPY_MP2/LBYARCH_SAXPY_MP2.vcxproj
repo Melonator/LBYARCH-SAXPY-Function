@@ -131,7 +131,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\nasm\nasm -f win64 asm_func.asm</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">asf_func.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">asm_func.obj</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\nasm\nasm -f win64 asm_func.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">asm_func.obj</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>

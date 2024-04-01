@@ -39,8 +39,7 @@ To verify that both programs produces the same output, two arrays for $Z$ are ut
 It is not entirely invalid to assume that the performance of the Assembly code is much faster than C. But over the years, optimizations for the C compiler have been introduced. Thus, to confirm whether or not the Assembly version performs better, the average time for each version is recorded for both the *Release* and *Debug* mode. Each version is ran 30 times to take the average.  The value of $a$ will be $2.25$ across all tests.
 
 ## Debug Mode
-
-![[c_vs_asm_debug.png]]
+![](c_vs_asm_debug.png)
 Currently, the C program is compiled without optimizations. Thus, via the debug mode, we can confirm that the Assembly version outperforms the C version in all test cases. You may look into the screenshots of each test case below.
 
 ### 2^20 Test Case
@@ -53,7 +52,7 @@ Currently, the C program is compiled without optimizations. Thus, via the debug 
 ![2^28](debug_28.png)
   
 ## Release Mode
-![[c_vs_asm_release.png]]
+![](c_vs_asm_release.png)
 With optimizations in place for C, the C version significantly outperforms the Assembly version. Similar to the debug mode, larger array sizes are where the difference is clearly seen. Although the difference is subtle in smaller array sizes, anything beyond 2^28 would produce a significant  difference in performance among the two implementations. You may look into the screenshots of each test case below.
 
 ### 2^20 Test Case

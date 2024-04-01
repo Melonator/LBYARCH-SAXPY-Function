@@ -27,11 +27,11 @@ The multiplication operation $a  * X$ is done via the *mulss* instruction, store
 
 ### Array contents 
 Given the size of the array, both $X$ and $Y$ are generated random values.
-![random generator](random_gen.png)
+![random generator](randomizer.png)
 
 ### Correctness Check
 To verify that both programs produces the same output, two arrays for $Z$ are utilized to compare its contents. A function in C was written to make sure that both outputs match. This is ran at the end of the program once all calculations are done for both C and Assembly.
-![Correctness Check](correctness.png)
+![Correctness Check](checker.png)
 ### Hypothesis
 It is not entirely invalid to assume that the performance of the Assembly code is much faster than C. But over the years, optimizations for the C compiler have been introduced. Thus, to confirm whether or not the Assembly version performs better, the average time for each version is recorded for both the *Release* and *Debug* mode. Each version is ran 30 times to take the average.  The value of $a$ will be $2.25$ across all tests.
 

@@ -35,6 +35,11 @@ To verify that both programs produces the same output, two arrays for $Z$ are ut
 
 ![Correctness Check](correctness.png)
 
+### CSV Output
+A CSV will be produced within the project's directory after the program is ran, this is to verify the calculation for the average, showing the time taken for each test for both versions depending on the mode (e.g. release or debug). 
+
+![](csv_sample.png)
+
 ### Hypothesis
 It is not entirely invalid to assume that the performance of the Assembly code is much faster than C. But over the years, optimizations for the C compiler have been introduced. Thus, to confirm whether or not the Assembly version performs better, the average time for each version is recorded for both the *Release* and *Debug* mode. Each version is ran 30 times to take the average.  The value of $a$ will be $2.25$ across all tests.
 
